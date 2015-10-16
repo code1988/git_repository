@@ -43,7 +43,7 @@ mkdir /mnt/rd3
 
 #/sbin/ifconfig lo 127.0.0.1
 #/sbin/ifconfig eth1 192.168.19.230
-#/sbin/ifconfig eth0 192.168.1.230
+/sbin/ifconfig eth0 192.168.1.230
 insmod /usr/local/lib/key.ko
 insmod /usr/local/lib/lcd.ko
 insmod /usr/local/lib/spi.ko
