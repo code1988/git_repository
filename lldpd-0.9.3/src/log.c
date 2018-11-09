@@ -27,12 +27,16 @@
 #include <errno.h>
 #include <time.h>
 
-/* By default, logging is done on stderr. */
+/* By default, logging is done on stderr. 
+ * 标识是否使用syslog,缺省打印到标准输出
+ * */
 static int	 use_syslog = 0;
 /* Default debug level */
 static int	 debug = 0;
 
-/* Logging can be modified by providing an appropriate log handler. */
+/* Logging can be modified by providing an appropriate log handler. 
+ * 自定义的log函数
+ * */
 static void (*logh)(int severity, const char *msg) = NULL;
 
 static void	 vlog(int, const char *, const char *, va_list);
